@@ -87,7 +87,7 @@ def lipopi_cleanup():
 
 lipopi = {}
 
-lipopi['shutdown_pin']    = 7
+lipopi['shutdown_pin']    = 17
 
 # lipopi['logfile'] = '/home/pi/lipopi.log'  # FULL path to the log file
 # or do this relative to the location of this script?
