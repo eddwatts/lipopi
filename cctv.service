@@ -1,0 +1,12 @@
+[Service]
+ExecStart=omxplayer rtsp://10.1.8.253:7447/55ba48dde68320b007c9171e_2
+Restart=always
+StandardOutput=syslog
+StandardError=syslog
+SyslogIdentifier=cctv
+User=root
+Group=root
+RestartSec=5s
+
+[Install]
+WantedBy=multi-user.target
