@@ -37,7 +37,10 @@ def lipopi_setup():
 
     GPIO.add_event_detect(lipopi['shutdown_pin'], GPIO.RISING, callback=lipopi_user_shutdown, bouncetime=300)
 
+# for powerboost
     GPIO.add_event_detect(lipopi['low_battery_pin'], GPIO.FALLING, callback=lipopi_low_battery_shutdown, bouncetime=300)
+# for zero lipo
+#    GPIO.add_event_detect(lipopi['low_battery_pin'], GPIO.RISING, callback=lipopi_low_battery_shutdown, bouncetime=300)
 
     # open log file in append mode
     lipopi['logfile_pointer'] = open(lipopi['logfile'], 'a+')
