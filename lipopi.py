@@ -30,9 +30,10 @@ def lipopi_setup():
     # setup the pin to check the shutdown switch - use the internal pull down resistor
     GPIO.setup(lipopi['shutdown_pin'], GPIO.IN, pull_up_down=GPIO.PUD_DOWN)
 
-    # setup the low battery check pin
+    # setup the low battery check pin powerboost
     GPIO.setup(lipopi['low_battery_pin'], GPIO.IN)
-
+    #ZeroLipo
+    #GPIO.setup(lipopi['low_battery_pin'], GPIO.IN, pull_up_down=GPIO.PUD_DOWN
     # create a trigger for the shutdown switch and low battery pins
 
     GPIO.add_event_detect(lipopi['shutdown_pin'], GPIO.RISING, callback=lipopi_user_shutdown, bouncetime=300)
