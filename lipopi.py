@@ -95,7 +95,7 @@ lipopi = {}
 # Specify which GPIO pins to use
 lipopi['low_battery_pin'] = 15
 
-lipopi['shutdown_pin']    = 18
+lipopi['shutdown_pin']    = 21
 
 lipopi['logfile'] = '/home/pi/lipopi.log'  # FULL path to the log file
 # or do this relative to the location of this script?
